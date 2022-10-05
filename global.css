@@ -1,0 +1,70 @@
+
+.rainbow_text {
+    display: inline-block;
+    font-family: Tahoma;
+    background: black;
+    background: linear-gradient(to right, red, orange , yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .rainbow_text.animated {
+        animation: rainbow_animation 5s ease-in-out infinite;
+        background-size: 400%;
+  }
+  
+  @keyframes rainbow_animation {
+      0%,100% {
+          background-position: 0
+      }
+  
+      50% {
+          background-position: 100%
+      }
+  }
+  
+  
+  
+  .rainbow {
+    font-family: tahoma;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animatedBackground 20s linear infinite;
+      -moz-animation: animatedBackground 20s linear infinite;
+      -webkit-animation: animatedBackground 5s linear infinite;
+      -ms-animation: animatedBackground 20s linear infinite;
+      -o-animation: animatedBackground 20s linear infinite;
+  }
+  
+  
+  
+  .scrolling-container {
+      overflow : hidden;
+      height: 55px;
+  }
+  
+  /* Animation rainbow background */
+  @keyframes animatedBackground {
+      0% { background-position: 0; }
+      100% { background-position: 500px; }
+  }
+  @-moz-keyframes animatedBackground {
+      0% { background-position: 0; }
+      100% { background-position: 500px; }
+  }
+  @-webkit-keyframes animatedBackground {
+      0% { background-position: 0; }
+      100% { background-position: 500px; }
+  }
+  @-ms-keyframes animatedBackground {
+      0% { background-position: 0; }
+      100% { background-position: 500px; }
+  }
+  @-o-keyframes animatedBackground {
+      0% { background-position: 0; }
+      100% { background-position: 500px; }
+  }
